@@ -59,8 +59,8 @@ section {
     width: 1158px;
     height: 72px;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 1px 6px rgba(46, 47, 66, 0.08);
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .nav-header{
     display: flex;
@@ -345,6 +345,11 @@ section {
 .footer .logo{
     display: inline-block;
     margin-bottom: 16px;
+}
+.footer-social-links .social-links-list{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
 }
 .footer-social-title{
     color: #fff;
