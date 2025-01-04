@@ -59,18 +59,13 @@ section {
     justify-content: space-between;
     width: 1158px;
     height: 72px;
-    /* position: relative; */
 }
 .nav-header{
     display: flex;
     align-items: center;
 }
-.nav-header:nth-child(1){
-    position: relative;
-}
 .header .logo{
     margin-right: 76px;
-    /* position: relative; */
 }
 .header .logo-style{
     color: #2e2f42;
@@ -80,13 +75,16 @@ section {
     gap: 40px;
 }
 .nav-item{
-    /* position: relative; */
     font-weight: 500;
     color: #2e2f42;
 
 }
-
-.nav-list:nth-child(1)::after{
+.nav-list li:first-child .nav-item-link {
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-list .nav-item:nth-child(1) .nav-item-link::after{
     content: '';
     width: 100%;
     position: absolute;
@@ -255,6 +253,7 @@ section {
 .icon{
     width: 40px;
     height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link {
     display: flex;
